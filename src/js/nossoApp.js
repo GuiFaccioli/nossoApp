@@ -8,6 +8,11 @@ function togglePeito() {
     btn.hidden = !btn.hidden;
   });
 }
+function toggleOmbros() {
+  document.querySelectorAll(".ombros").forEach(btn => {
+    btn.hidden = !btn.hidden;
+  });
+}
 
 
 function roscaDireta() {

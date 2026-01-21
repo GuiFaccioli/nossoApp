@@ -1,3 +1,15 @@
+function toggleBiceps() {
+  document.querySelectorAll(".biceps").forEach(btn => {
+    btn.hidden = !btn.hidden;
+  });
+}
+function togglePeito() {
+  document.querySelectorAll(".peito").forEach(btn => {
+    btn.hidden = !btn.hidden;
+  });
+}
+
+
 function roscaDireta() {
 
     document.getElementById("roscaDireta").scrollIntoView({
@@ -38,3 +50,4 @@ function rosca21() {
         block:"start"
     });
 }
+

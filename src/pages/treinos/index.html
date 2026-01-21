@@ -5,17 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>nossoApp</title>
-
-    <script src="../js/nossoApp.js"></script>
-    <link rel="stylesheet" href="../css/nossoApp.css">
+  <link rel="stylesheet" href="../../styles/styles.css">
+  <script src="../js/nossoApp.js"></script>
 
 </head>
 
 <body>
     <div>
         <h1 class="p">TREINOS</h1>
-   <a href="home.html" class="btn">Home</a>
-<a href="perfil.html" class="btn">Perfil</a>
+   <a href="../home/index.html" class="btn">Home</a>
+<a href="../perfil/index.html" class="btn">Perfil</a>
     
     
 
@@ -27,19 +26,23 @@
             <p class="titulo">Catálogo</p>
 
             
+        <!-- -->
+          
+  <button class="membrosLista" onclick="toggleBiceps()">BÍCEPS</button>
 
-            <li id="listaExercicios">
-               <p class="membrosLista">BÍCEPS</p>
-                <button class="botoesCatalogo" onclick="roscaDireta()">Rosca direta</button>
-                <button class="botoesCatalogo" onclick="roscaAlternada()">Rosca alternada</button>
-                <button class="botoesCatalogo" onclick="roscaMartelo()">Rosca martelo</button>
-                <button class="botoesCatalogo" onclick="roscaConcentrada()">Rosca concentrada</button>
-                <button class="botoesCatalogo" onclick="rosca21()">Rosca 21</button>
-                <p class="membrosLista">PEITO</p>
-                <button class="botoesCatalogo">Supino com halteres</button>
-                <button class="botoesCatalogo">Supino com halteres</button>
-                <button class="botoesCatalogo">Supino com halteres</button>
-                <button class="botoesCatalogo">Supino com halteres</button>
+  <button class="botoesCatalogo biceps" onclick="roscaDireta()" hidden>ROSCA DIRETA</button>
+  <button class="botoesCatalogo biceps" onclick="roscaAlternada()" hidden>Rosca alternada</button>
+  <button class="botoesCatalogo biceps" onclick="roscaMartelo()" hidden>Rosca martelo</button>
+  <button class="botoesCatalogo biceps" onclick="roscaConcentrada()"hidden>Rosca concentrada</button>
+  <button class="botoesCatalogo biceps" onclick="rosca21()"hidden>Rosca 21</button>
+         
+
+
+                <button class="membrosLista" onclick="togglePeito()">PEITO</button>
+                <button class="botoesCatalogo peito" hidden>Supino com halteres</button>
+                <button class="botoesCatalogo peito" hidden>Supino com halteres</button>
+                <button class="botoesCatalogo peito" hidden>Supino com halteres</button>
+                <button class="botoesCatalogo peito" hidden>Supino com halteres</button>
                 <p class="membrosLista">OMBROS</p>
                 <button class="botoesCatalogo">Supino com halteres</button>
                 <button class="botoesCatalogo">Supino com halteres</button>

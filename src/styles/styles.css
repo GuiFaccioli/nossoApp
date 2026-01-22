@@ -3,17 +3,16 @@
 
 html { scroll-behavior: smooth; }
 
-.divCatalogo{
-  background-color: rgb(228, 218, 238);
-  width: min(420px, 100%);   /* no desktop limita, no mobile ocupa 100% */
-  padding: 20px;
-  border-radius: 20px;
-
-  position: sticky;          /* melhor que fixed pra mobile */
-  top: 12px;
-
-  /* text-shadow correto */
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.15);
+@media (max-width: 768px) {
+  .divCatalogo {
+    width: 100%;
+    padding: 30px;
+    top: 0;
+    border-radius: 20px; /* vira uma barra no topo */
+    /*position: sticky;*/
+    z-index: 10;
+    margin-top: 15px;
+  }
 }
 
 .exercicios{
@@ -43,17 +42,9 @@ html { scroll-behavior: smooth; }
   
 }
 
-/* 2) Mobile: muda layout */
-@media (max-width: 768px) {
 
-  .divCatalogo{
-    width: 100%;
-    padding: 14px;
-    top: 0;
-    border-radius: 0;        /* fica tipo “barra” no topo */
-    position: sticky;
-    z-index: 10;
-  }
+
+
 
   .exercicios{
     flex-direction: column;  /* empilha no celular */
@@ -66,7 +57,7 @@ html { scroll-behavior: smooth; }
     width: 100%;             /* botão grandão, fácil de clicar */
     
   }
-}
+
 
 /* Card do exercício */
 .cardExercicio{
@@ -154,3 +145,26 @@ p, span, button, a {
 [hidden] {
   display: none !important;
 }
+
+.fotoApp{
+
+  margin-left: 300px;
+ 
+}
+
+
+
+
+
+/* PERFIL */
+
+
+
+/*TREINOS */
+
+
+/*HOME */
+
+
+
+/* GERAL */

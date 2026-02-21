@@ -26,10 +26,13 @@ html { scroll-behavior: smooth; }
 /* botões melhores no toque */
 .botoesCatalogo{
   background-color: rgb(228, 218, 238);
-  border-radius: 20px;
-  padding: 10px 14px;
+  border-radius: 2px;
+  padding: 10px 10px;
   border: 0;
   cursor: pointer;
+  width: 70%;             /* botão grandão, fácil de clicar */
+    margin: 1px;
+    margin-left: 55px;
 }
 
 /* itens/“membros” sem ficar minúsculo */
@@ -53,11 +56,7 @@ html { scroll-behavior: smooth; }
     margin-left: 20px;
   }
 
-  .botoesCatalogo{
-    width: 100%;             /* botão grandão, fácil de clicar */
-    
-  }
-
+  
 
 /* Card do exercício */
 .cardExercicio{
